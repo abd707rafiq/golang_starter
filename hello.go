@@ -4,6 +4,8 @@ import (
 	"fmt" /// fmt package
 )
 
+// <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
 /// helo world in golang
 
 // func main() { // go function
@@ -33,7 +35,7 @@ import (
 // In this case, the type of the variable is inferred from the value (means that the compiler decides the type of the variable, based on the value).
 
 // Variable Declaration With Initial Value
-
+// <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 // func main() {
 
 // 	var student1 string = "john"
@@ -45,6 +47,7 @@ import (
 // 	fmt.Println(x)
 
 // }
+// <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 // Variable Declaration Without Initial Value
 
@@ -59,9 +62,28 @@ import (
 // }
 
 // Value Assignment After Declaration
+// <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+// func main() {
+// 	var student1 string
+// 	student1 = "John"
+// 	fmt.Println(student1)
+// }
+
+// Note: It is not possible to declare a variable using ":=" without assigning a value to it.
+
+// Go Multiple Variable Declaration
+
+// go allows to declare multiple variblaes
 
 func main() {
-	var student1 string
-	student1 = "John"
-	fmt.Println(student1)
+	var a, b, c, d int = 1, 3, 5, 7
+
+	fmt.Println(a)
+	fmt.Println(b)
+	fmt.Println(c)
+	fmt.Println(d)
 }
+
+// Note: If you use the type keyword, it is only possible to declare one type of variable per line.
+// If the type keyword is not specified, you can declare different types of variables on the same line:
